@@ -1,0 +1,39 @@
+/* Caso queira alguma estilização adicional */
+body {
+  font-family: "Arial", sans-serif;
+}
+/* Coração */
+.heart {
+  position: fixed;
+  top: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: #f87171; /* vermelho rosado */
+  clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 85%, 20% 100%, 0% 35%);
+  opacity: 0.8;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+/* Animação da queda */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+#letter.open {
+  transform: rotateY(-160deg);
+}
+
+#letter-content.open {
+  opacity: 1;
+  transition: opacity 0.5s 0.7s ease-in-out;
+}

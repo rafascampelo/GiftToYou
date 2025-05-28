@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Cantinho 💖</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-pink-50 flex flex-col items-center justify-start min-h-screen text-center p-4"
+    id="hearts-container"
+  >
+    <iframe
+      src="https://open.spotify.com/embed/track/4t0UsYzmmmZRMTWn77jiGF"
+      width="100%"
+      height="80"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+      class="rounded-lg"
+    ></iframe>
+    <!-- Carrossel -->
+    <div
+      class="relative w-full max-w-xs mt-6 overflow-hidden rounded-lg shadow-lg"
+    >
+      <div id="carousel" class="flex transition-transform duration-500">
+        <img
+          src="images/foto1.jpeg"
+          class="w-full flex-shrink-0 object-cover"
+        />
+        <img
+          src="images/foto2.jpeg"
+          class="w-full flex-shrink-0 object-cover"
+        />
+        <img
+          src="images/foto3.jpeg"
+          class="w-full flex-shrink-0 object-cover"
+        />
+        <img
+          src="images/foto4.jpeg"
+          class="w-full flex-shrink-0 object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Texto romântico -->
+    <p class="mt-4 text-pink-900 text-lg font-semibold">
+      Cada momento com você é uma nova foto no carrossel da minha vida 💘
+      <br />
+    </p>
+
+    <!-- Navegação do carrossel -->
+    <div class="flex gap-4 mt-4">
+      <button
+        onclick="prevSlide()"
+        class="bg-pink-300 hover:bg-pink-400 px-4 py-2 rounded-full text-white"
+      >
+        ⬅️
+      </button>
+      <button
+        onclick="nextSlide()"
+        class="bg-pink-300 hover:bg-pink-400 px-4 py-2 rounded-full text-white"
+      >
+        ➡️
+      </button>
+    </div>
+    <!-- Botão pra abrir a cartinha -->
+    <button
+      id="openLetterBtn"
+      class="bg-pink-300 hover:bg-pink-400 rounded-lg text-white font-semibold py-2 px-4 mt-6 mb-6"
+    >
+      Abrir cartinha 💌
+    </button>
+
+    <!-- Cartinha oculta inicialmente -->
+    <div
+      id="letter-wrapper"
+      class="hidden flex mt-6 items-center justify-center"
+    >
+      <div
+        id="letter"
+        class="w-80 bg-pink-200 rounded-lg shadow-lg relative mt-6 transition-all duration-700 ease-in-out p-6 text-pink-900 text-center text-sm scale-90 opacity-0"
+      >
+        <p class="mb-2">Oi, amor 💖</p>
+        <p class="mb-2">Você queria uma cartinha então fiz isso aqui KKKKK</p>
+        <p>
+          Te amo um tantão <br />
+          vc é o meu bem mais precioso. <br />
+          obrigada por ser minha melhor amiga e a melhor namorada! <br />
+        </p>
+        <p>Com milhões de beijinhos, Rafa. 💌</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
